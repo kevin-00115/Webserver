@@ -1,0 +1,9 @@
+
+<form method="post" action="{% url 'add_feature' %}">
+  {% csrf_token %}
+  <label for="feature">Feature:</label><br>
+  <input type="text" id="feature" name="feature"><br>
+  <label for="label">Label:</label><br>
+  <input type="text" id="label" name="label"><br><br>
+  <input type="submit" value="Submit">
+</form>
